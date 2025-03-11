@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> 
+    <title>Project</title>
+</head>
+  
+<div class="header">
+    <h1 id="title">ProjectX</h1>
+    <p id="description">My shadow project</p>
+
+  </div>
+    
+  <body>
+<main>
+  <form id="survey-form">
+    <div class="form-group">
+<label id="name-label" for="name">Name</label>
+<input 
+id="name"
+type="text"
+ placeholder="Enter your name"
+ required
+ >
+
+<label id="email-label" for="email-label">Email</label>
+<input 
+id="email" 
+type="email"
+placeholder="Email"
+required
+>
+
+<label id="number-label" for="number">Age</label>
+<input 
+id="number" 
+type="number"
+min="14" max="99"
+placeholder="Age"
+required
+>
+</div>
+
+<div class="form-group">
+<label for="dropdown">Select your card</label>
+<select id="dropdown" name="card">
+<option value="">Select Card</option>
+<option value="debit"> Debit Card</option>
+<option value="credit">Credit Card</option>
+<option value="overdraft">Overdraft Cards</option>
+</select>
+</div>
+
+<div class="form-group">
+<fieldset>
+<label class="card select"for="radio">Which bank card would you like to apply for?</label>
+<label class="Debit" for="debit">Debit Card</label>
+<input id="debit" value="debit" type="radio" name="card_type">
+
+<label class="Credit" for="credit">Credit Card</label>
+<input id="credit" value="credit" type="radio" name="card_type">
+
+<label class="Overdraft" for="overdraft">Overdraft Card</label>
+<input id="overdraft" value="overdraft"name="card_type" type="radio">
+</fieldset>
+</div>
+
+<div class="form-group">
+<fieldset> 
+<legend>What category of cashback would you like to receive</legend>
+
+<label for="food-shop">Food shop</label>
+<input id="food-shop" name="food-shop" type="checkbox" value="food-shop">
+  
+<label for="gym">Gym</label>
+<input id="gym" name="gym" type="checkbox" value="gym">
+
+<label for="books">Books</label>
+<input id="books" name="books" type="checkbox" value="books">
+</fieldset>
+</div>
+
+
+<div class="form-group">
+<label for="wishes">Write us your wishes.</label>
+
+<textarea id="wishes" name="wishes" placeholder="Write here"></textarea>
+<button id="sumbit" type="sumbit" value="sumbit">Sumbit</button>
+</div>
+  </form>
+</main>
+</body>
+</html>
